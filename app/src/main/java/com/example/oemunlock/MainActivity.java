@@ -18,6 +18,7 @@ import com.example.oemunlock.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d("OMEUNLOCK", "Is Bootloader Locked? " + isLocked);
 
 
+        TextView statusText = findViewById(R.id.status_text);
+        statusText.setText("Done!");
 
 
     }
